@@ -26,11 +26,6 @@ client.on ("message", (message) => {
         message.channel.send ("The creator of this bot is `YMA_ST1#5688`")
     }
     
-    if (msg.startswith (prefix + "invite")) {
-        message.reply ("Check your DMs!")
-        message.author.send ("https://discordapp.com/oauth2/authorize?&client_id=492360828515909632&scope=bot&permissions=380096")
-    }
-    
     if (msg.startsWith (prefix + "naptime")) {
         message.channel.send ("https://cdn.discordapp.com/attachments/370999194221019137/492115561728311296/unknown.png")
     }
@@ -48,7 +43,6 @@ client.on ("message", (message) => {
             .addField("!!GodRagdoll", "Shows the one and the only godly ragdoll.")
             .addField("!!NapTime", "Shows a funny picture of a ragdoll but on bed.")
             .addField("!!Creator", "Shows information about the bot creator!")
-            .addField("!!Invite", "Sends you a link to invite the bot to your guild!")
             .addField("** **", "If you have any questions or problems, DM <@536593866774806530>")
             .setFooter("The Bot Creator: YMA_ST1#5688")
         message.author.send (embed)

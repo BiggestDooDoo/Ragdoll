@@ -34,6 +34,10 @@ client.on ("message", (message) => {
     if (msg.startsWith (prefix + "naptime")) {
         message.channel.send ("https://cdn.discordapp.com/attachments/370999194221019137/492115561728311296/unknown.png")
     }
+    
+    if (msg.startsWith (prefix + "naptime")) {
+        message.channel.send (`I am being used by ${client.users.size} users among ${client.guilds.size} Servers!`)
+    }
 
     if (msg.startsWith (prefix + "godragdoll")) {
         message.channel.send ("https://cdn.discordapp.com/attachments/492337488485154828/494908312530452480/godragdoll.png")
@@ -48,7 +52,7 @@ client.on ("message", (message) => {
             .addField("!!GodRagdoll", "Shows the one and the only godly ragdoll.")
             .addField("!!NapTime", "Shows a funny picture of a ragdoll but on bed.")
             .addField("!!Creator", "Shows information about the bot creator!")
-            .addField("!!Inviter", "Sends a link to invite the ragdoll bot to your server!")
+            .addField("!!Invite", "Sends a link to invite the ragdoll bot to your server!")
             .addField("** **", "If you have any questions or problems, DM <@536593866774806530>")
             .setFooter("The Bot Creator: YMA_ST1#5688")
         message.author.send (embed)

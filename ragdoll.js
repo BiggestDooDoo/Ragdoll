@@ -35,7 +35,7 @@ client.on ("message", (message) => {
         message.channel.send ("https://cdn.discordapp.com/attachments/370999194221019137/492115561728311296/unknown.png")
     }
     
-    if (msg.startsWith (prefix + "naptime")) {
+    if (msg.startsWith (prefix + "guildcount")) {
         message.channel.send (`I am being used by ${client.users.size} users among ${client.guilds.size} Servers!`)
     }
 
@@ -53,6 +53,7 @@ client.on ("message", (message) => {
             .addField("!!NapTime", "Shows a funny picture of a ragdoll but on bed.")
             .addField("!!Creator", "Shows information about the bot creator!")
             .addField("!!Invite", "Sends a link to invite the ragdoll bot to your server!")
+            .addField("!!GuildCount", "Shows the amount of servers the bot is in!")
             .addField("** **", "If you have any questions or problems, DM <@536593866774806530>")
             .setFooter("The Bot Creator: YMA_ST1#5688")
         message.author.send (embed)
